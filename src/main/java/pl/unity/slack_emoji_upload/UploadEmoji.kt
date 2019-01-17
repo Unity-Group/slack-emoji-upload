@@ -14,8 +14,6 @@ class UploadEmoji(
 
 	fun uploadEmoji(fileLocation: String, emojiName: String) {
 		try {
-//			driver.get(emojiPage)
-
 			elementByCss("button[emoji-type='emoji']").click()
 
 			wait().until(ExpectedConditions.presenceOfElementLocated(By.id("emojiimg"))).sendKeys(fileLocation)
