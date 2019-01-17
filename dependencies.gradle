@@ -1,9 +1,9 @@
 repositories {
 	mavenCentral()
 	repositories {
-//		maven {
-//			url 'https://maven.unity.pl/content/groups/unity/'
-//		}
+		maven {
+			url 'https://maven.unity.pl/content/groups/unity/'
+		}
 		maven {
 			url 'http://repo.spring.io/milestone/'
 		}
@@ -32,19 +32,23 @@ dependencies {
 		implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}"
 		implementation "org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}"
 	}
+	
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '3.141.59'
+
 
 	section("utils") {
-		// implementation "com.upsaily.commons:utils:${upsailyUtilsVersion}"
-		// implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
-		// implementation group: 'commons-io', name: 'commons-io', version: '2.6'
-		// implementation('io.vavr:vavr-kotlin:0.9.2') {
-		// 	transitive = false
-		// }
+		implementation "com.upsaily.commons:utils:${upsailyUtilsVersion}"
+		implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
+		implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+		implementation('io.vavr:vavr-kotlin:0.9.2') {
+			transitive = false
+		}
 	}
 
 	section("logging") {
-		// implementation 'org.slf4j:slf4j-api:1.7.25'
-		// implementation "com.upsaily:logging:${upsailyUtilsVersion}"
+		implementation 'org.slf4j:slf4j-api:1.7.25'
+		implementation "com.upsaily:logging:${upsailyUtilsVersion}"
 	}
 
 	section("testing") {
