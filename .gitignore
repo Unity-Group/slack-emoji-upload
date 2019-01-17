@@ -1,0 +1,11 @@
+.*
+build/
+bin/
+out/
+
+*.iml
+
+*.sublime-workspace
+
+gradle/eclipse/Resources.launch
+Thumbs.db
