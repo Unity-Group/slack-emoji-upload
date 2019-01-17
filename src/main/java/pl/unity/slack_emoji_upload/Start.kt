@@ -38,7 +38,7 @@ object Start {
 		val slackBaseUrl: String = commandLine.getOptionValue("url")
 		val slackUsername: String = commandLine.getOptionValue("username")
 		val slackPassword: String = commandLine.getOptionValue("password")
-		val emotsLocation: String = commandLine.getOptionValue("emoji")
+		val emotsLocation: String = commandLine.getOptionValue("emojis")
 
 		SlackLogin(
 			driverLocation,
