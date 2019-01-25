@@ -43,3 +43,9 @@ emojis via slack web app ¯\_(ツ)_/¯
 
 (so don't be surprised to see chrome opening and
 acting on it's own)
+
+How to import emojis from slack
+===============================
+
+You can use https://github.com/Unity-Group/hipchat-download-emoji to download all the hipchat emojis you have gathered
+
